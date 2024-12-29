@@ -14,9 +14,8 @@ from sklearn.decomposition import PCA
 from sklearn.manifold import TSNE
 from sklearn.metrics import classification_report, f1_score, roc_auc_score
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import LabelEncoder
+from sklearn.preprocessing import LabelEncoder, StandardScaler
 from datetime import datetime
-
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -52,14 +51,21 @@ X_train, X_valid, y_train, y_valid = train_test_split(
 )
 
 
+scaler = StandardScaler()
+X_train = torch.tensor(scaler.fit_transform(X_train)).to(device)
+X_valid = torch.tensor(scaler.transform(X_valid)).to(device)
+X_test = torch.tensor(scaler.transform(X_test)).to(device)
+
+
 # pca = PCA(n_components=30)
 # X_train = torch.tensor(pca.fit_transform(X_train)).to(device)
 # X_valid = torch.tensor(pca.transform(X_valid)).to(device)
 # X_test = torch.tensor(pca.transform(X_test)).to(device)
 
-X_train = torch.tensor(X_train).to(device)
-X_valid = torch.tensor(X_valid).to(device)
-X_test = torch.tensor(X_test).to(device)
+
+# X_train = torch.tensor(X_train).to(device)
+# X_valid = torch.tensor(X_valid).to(device)
+# X_test = torch.tensor(X_test).to(device)
 
 
 y_train = torch.nn.functional.one_hot(y_train.long(), num_classes=2).to(device).float()
