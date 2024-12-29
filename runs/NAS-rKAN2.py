@@ -184,5 +184,5 @@ print("ROC-AUC: %.4f" % roc_auc_score(y_test.cpu(), y_pred))
 
 
 results = study.trials_dataframe()
-results.to_csv('results-fKAN-%s-%s.csv' % (DATA, datetime.now()))
+results.to_csv('results-rKAN2-%s-%s.csv' % (DATA, datetime.now()))
 
