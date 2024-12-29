@@ -162,7 +162,5 @@ print("ROC-AUC: %.4f" % roc_auc_score(y_test.cpu(), y_pred))
 
 
 results = study.trials_dataframe()
-vars = results[["params_depth", "params_wavelet"]]
-values = results["value"].round(2)
 results.to_csv('results-waveletKAN-%s-%s.csv' % (DATA, datetime.now()))
 
