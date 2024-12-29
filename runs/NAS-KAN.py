@@ -84,14 +84,13 @@ def objective(trial):
     depth = trial.suggest_int("depth", 1, MAX_DEPTH)
     grid = trial.suggest_int("grid", 1, MAX_GRID, step=2)
     k = trial.suggest_int("k", 1, MAX_K)
-    lmbda = trial.suggest_float("lamb", 1e-5, 1e-1, log=True)
 
     width = [trial.suggest_int(f"neurons_layer_{i}", 5, MAX_NEURONS, step=5) for i in range(depth)]
     width = [input_shape] + width + [output_shape]
 
     model = KAN(width=width, grid=grid, k=k, device=device)
 
-    history = model.fit(dataset, steps=EPOCHS, loss_fn=torch.nn.CrossEntropyLoss(), lamb=lmbda)
+    history = model.fit(dataset, steps=EPOCHS, loss_fn=torch.nn.CrossEntropyLoss())
 
     y_score = model(X_valid).cpu()
     y_pred = (y_score > 0.5).int()
