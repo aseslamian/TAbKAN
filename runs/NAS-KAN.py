@@ -24,7 +24,7 @@ EPOCHS = 10
 TRIALS = 20
 
 MAX_DEPTH = 10
-MAX_GRID = 10
+MAX_GRID = 9
 MAX_K = 5
 MAX_NEURONS = 100
 
@@ -38,9 +38,9 @@ X = data.values.astype(np.float32)
 
 if y.dtype == "object":
     label_encoder = LabelEncoder()
-    y = torch.tensor(label_encoder.fit_transform(y)).reshape(-1, 1).float()
+    y = torch.tensor(label_encoder.fit_transform(y))
 else:
-    y = torch.tensor(y).reshape(-1, 1).float()
+    y = torch.tensor(y)
 
 
 X_train, X_test, y_train, y_test = train_test_split(
@@ -62,9 +62,10 @@ X_valid = torch.tensor(X_valid).to(device)
 X_test = torch.tensor(X_test).to(device)
 
 
-y_train = y_train.to(device)
-y_valid = y_valid.to(device)
-y_test = y_test.to(device)
+y_train = torch.nn.functional.one_hot(y_train.long(), num_classes=2).to(device).float()
+y_valid = torch.nn.functional.one_hot(y_valid.long(), num_classes=2).to(device).float()
+y_test = torch.nn.functional.one_hot(y_test.long(), num_classes=2).to(device).float()
+
 
 input_shape = X_train.shape[1]
 output_shape = y_train.shape[1]
@@ -83,13 +84,14 @@ def objective(trial):
     depth = trial.suggest_int("depth", 1, MAX_DEPTH)
     grid = trial.suggest_int("grid", 1, MAX_GRID, step=2)
     k = trial.suggest_int("k", 1, MAX_K)
+    lmbda = trial.suggest_float("lamb", 1e-5, 1e-1, log=True)
 
     width = [trial.suggest_int(f"neurons_layer_{i}", 5, MAX_NEURONS, step=5) for i in range(depth)]
     width = [input_shape] + width + [output_shape]
 
-    model = KAN(width=width, grid=grid, k=k, device=device).speed()
+    model = KAN(width=width, grid=grid, k=k, device=device)
 
-    history = model.fit(dataset, steps=EPOCHS)
+    history = model.fit(dataset, steps=EPOCHS, loss_fn=torch.nn.CrossEntropyLoss(), lamb=lmbda)
 
     y_score = model(X_valid).cpu()
     y_pred = (y_score > 0.5).int()
@@ -97,8 +99,8 @@ def objective(trial):
     return f1_score(y_valid.cpu(), y_pred, average="macro")
 
 
-study = optuna.create_study(direction="maximize")  # Change to "minimize" if needed
-study.optimize(objective, n_trials=TRIALS)  # Adjust the number of trials as needed
+study = optuna.create_study(direction="maximize")
+study.optimize(objective, n_trials=TRIALS)
 
 
 best_params = study.best_params
