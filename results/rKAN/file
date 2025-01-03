@@ -1,3 +1,5 @@
+# Setting for this code:
+
 EPOCHS = 10
 TRIALS = 100
 
