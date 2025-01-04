@@ -1,5 +1,5 @@
 ## Setting for this code
-# -----------------------------
+
 EPOCHS = 100
 TRIALS = 1000
 
