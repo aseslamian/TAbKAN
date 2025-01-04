@@ -1,0 +1,2 @@
+,number,value,datetime_start,datetime_complete,duration,params_depth,params_neurons_layer_0,params_neurons_layer_1,params_neurons_layer_2,params_wavelet,state
+0,0,0.5426829268292683,2025-01-03 09:01:52.050445,2025-01-03 09:01:52.504933,0 days 00:00:00.454488,3,10,30,40,2,COMPLETE
