@@ -1,0 +1,9 @@
+## Setting for this code
+
+EPOCHS = 10
+TRIALS = 1000
+
+MAX_DEPTH = 15
+MAX_GRID = 10
+MAX_K = 5
+MAX_NEURONS = 50
