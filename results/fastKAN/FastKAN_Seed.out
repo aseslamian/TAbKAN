@@ -1,0 +1,38 @@
+cuda
+DATA: AD
+best_params: {'depth': 3, 'neurons_layer_0': 15, 'neurons_layer_1': 55, 'neurons_layer_2': 25}
+Average of top 10 ROC-AUC scores: 0.8921
+
+DATA: BL
+best_params: {'depth': 3, 'neurons_layer_0': 80, 'neurons_layer_1': 75, 'neurons_layer_2': 100}
+Average of top 10 ROC-AUC scores: 0.8376
+
+
+DATA: CA
+best_params: {'depth': 3, 'neurons_layer_0': 60, 'neurons_layer_1': 190, 'neurons_layer_2': 105}
+Average of top 10 ROC-AUC scores: 0.8974
+
+
+DATA: CB
+best_params: {'depth': 1, 'neurons_layer_0': 155}
+Average of top 10 ROC-AUC scores: 0.7674
+
+
+DATA: CG
+best_params: {'depth': 1, 'neurons_layer_0': 110}
+Average of top 10 ROC-AUC scores: 0.8548
+
+
+DATA: DS
+best_params: {'depth': 1, 'neurons_layer_0': 85}
+Average of top 10 ROC-AUC scores: 0.6888
+
+
+DATA: IC
+best_params: {'depth': 2, 'neurons_layer_0': 135, 'neurons_layer_1': 180}
+Average of top 10 ROC-AUC scores: 0.8874
+
+
+DATA: IO
+best_params: {'depth': 1, 'neurons_layer_0': 115}
+Average of top 10 ROC-AUC scores: 0.9602
