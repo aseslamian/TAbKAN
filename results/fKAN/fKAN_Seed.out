@@ -1,0 +1,25 @@
+cuda
+DATA: AD
+best_params: {'depth': 4, 'neurons_layer_0': 20, 'neurons_layer_1': 5, 'neurons_layer_2': 50, 'neurons_layer_3': 55, 'orders_layer_0': 4, 'orders_layer_1': 3, 'orders_layer_2': 2, 'orders_layer_3': 2}
+Average of top 10 ROC-AUC scores: 0.8920
+DATA: BL
+best_params: {'depth': 7, 'neurons_layer_0': 20, 'neurons_layer_1': 85, 'neurons_layer_2': 70, 'neurons_layer_3': 40, 'neurons_layer_4': 55, 'neurons_layer_5': 95, 'neurons_layer_6': 100, 'orders_layer_0': 5, 'orders_layer_1': 4, 'orders_layer_2': 2, 'orders_layer_3': 2, 'orders_layer_4': 3, 'orders_layer_5': 2, 'orders_layer_6': 2}
+Average of top 10 ROC-AUC scores: 0.8113
+DATA: CA
+best_params: {'depth': 8, 'neurons_layer_0': 80, 'neurons_layer_1': 40, 'neurons_layer_2': 50, 'neurons_layer_3': 45, 'neurons_layer_4': 65, 'neurons_layer_5': 40, 'neurons_layer_6': 55, 'neurons_layer_7': 90, 'orders_layer_0': 2, 'orders_layer_1': 2, 'orders_layer_2': 3, 'orders_layer_3': 3, 'orders_layer_4': 6, 'orders_layer_5': 5, 'orders_layer_6': 5, 'orders_layer_7': 3}
+Average of top 10 ROC-AUC scores: 0.8701
+DATA: CB
+best_params: {'depth': 3, 'neurons_layer_0': 55, 'neurons_layer_1': 95, 'neurons_layer_2': 55, 'orders_layer_0': 3, 'orders_layer_1': 3, 'orders_layer_2': 3}
+Average of top 10 ROC-AUC scores: 0.6921
+DATA: CG
+best_params: {'depth': 3, 'neurons_layer_0': 55, 'neurons_layer_1': 95, 'neurons_layer_2': 55, 'orders_layer_0': 3, 'orders_layer_1': 3, 'orders_layer_2': 3}
+Average of top 10 ROC-AUC scores: 0.8486
+DATA: DS
+best_params: {'depth': 7, 'neurons_layer_0': 80, 'neurons_layer_1': 90, 'neurons_layer_2': 40, 'neurons_layer_3': 20, 'neurons_layer_4': 75, 'neurons_layer_5': 55, 'neurons_layer_6': 35, 'orders_layer_0': 2, 'orders_layer_1': 3, 'orders_layer_2': 3, 'orders_layer_3': 5, 'orders_layer_4': 5, 'orders_layer_5': 6, 'orders_layer_6': 5}
+Average of top 10 ROC-AUC scores: 0.6914
+DATA: IC
+best_params: {'depth': 10, 'neurons_layer_0': 10, 'neurons_layer_1': 35, 'neurons_layer_2': 5, 'neurons_layer_3': 5, 'neurons_layer_4': 95, 'neurons_layer_5': 30, 'neurons_layer_6': 85, 'neurons_layer_7': 75, 'neurons_layer_8': 35, 'neurons_layer_9': 60, 'orders_layer_0': 3, 'orders_layer_1': 4, 'orders_layer_2': 3, 'orders_layer_3': 5, 'orders_layer_4': 3, 'orders_layer_5': 6, 'orders_layer_6': 2, 'orders_layer_7': 5, 'orders_layer_8': 6, 'orders_layer_9': 6}
+Average of top 10 ROC-AUC scores: 0.8901
+DATA: IO
+best_params: {'depth': 5, 'neurons_layer_0': 50, 'neurons_layer_1': 50, 'neurons_layer_2': 95, 'neurons_layer_3': 100, 'neurons_layer_4': 60, 'orders_layer_0': 2, 'orders_layer_1': 2, 'orders_layer_2': 6, 'orders_layer_3': 4, 'orders_layer_4': 5}
+Average of top 10 ROC-AUC scores: 0.9545
