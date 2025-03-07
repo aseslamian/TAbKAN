@@ -1,0 +1,7 @@
+# Setting for this code:
+
+EPOCHS = 10
+TRIALS = 100
+
+MAX_DEPTH = 20
+MAX_NEURONS = 200

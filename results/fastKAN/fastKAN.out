@@ -1,0 +1,114 @@
+FastKAN
+-----------------------------------------------------------------------------------------
+Reduce number of features from 105 to 105.
+best_params: {'depth': 3, 'neurons_layer_0': 15, 'neurons_layer_1': 55, 'neurons_layer_2': 25}
+              precision    recall  f1-score   support
+
+       <=50K       0.92      0.83      0.87      7431
+        >50K       0.94      0.82      0.88      7431
+
+   micro avg       0.93      0.82      0.87     14862
+   macro avg       0.93      0.82      0.87     14862
+weighted avg       0.93      0.82      0.87     14862
+ samples avg       0.82      0.82      0.82     14862
+
+ROC-AUC: 0.8818
+-----------------------------------------------------------------------------------------
+Reduce number of features from 45 to 45.
+best_params: {'depth': 3, 'neurons_layer_0': 80, 'neurons_layer_1': 75, 'neurons_layer_2': 100}
+              precision    recall  f1-score   support
+
+          No       0.84      0.79      0.81      1035
+         Yes       0.85      0.80      0.82      1035
+
+   micro avg       0.84      0.80      0.82      2070
+   macro avg       0.84      0.80      0.82      2070
+weighted avg       0.84      0.80      0.82      2070
+ samples avg       0.80      0.80      0.80      2070
+
+ROC-AUC: 0.8239
+-----------------------------------------------------------------------------------------
+Reduce number of features from 49 to 49.
+best_params: {'depth': 3, 'neurons_layer_0': 130, 'neurons_layer_1': 150, 'neurons_layer_2': 110}
+              precision    recall  f1-score   support
+
+           +       0.88      0.84      0.86        77
+           -       0.85      0.87      0.86        77
+
+   micro avg       0.86      0.86      0.86       154
+   macro avg       0.86      0.86      0.86       154
+weighted avg       0.86      0.86      0.86       154
+ samples avg       0.86      0.86      0.86       154
+
+ROC-AUC: 0.8604
+-----------------------------------------------------------------------------------------
+Reduce number of features from 556 to 556.
+best_params: {'depth': 1, 'neurons_layer_0': 155}
+              precision    recall  f1-score   support
+
+        band       0.59      0.90      0.72        63
+      noband       0.75      0.65      0.70        62
+
+   micro avg       0.65      0.78      0.71       125
+   macro avg       0.67      0.77      0.71       125
+weighted avg       0.67      0.78      0.71       125
+ samples avg       0.68      0.78      0.71       125
+
+ROC-AUC: 0.6786
+-----------------------------------------------------------------------------------------
+Reduce number of features from 61 to 61.
+best_params: {'depth': 1, 'neurons_layer_0': 110}
+              precision    recall  f1-score   support
+
+         bad       0.84      0.84      0.84       140
+        good       0.84      0.81      0.82       140
+
+   micro avg       0.84      0.82      0.83       280
+   macro avg       0.84      0.82      0.83       280
+weighted avg       0.84      0.82      0.83       280
+ samples avg       0.82      0.82      0.82       280
+
+ROC-AUC: 0.8321
+-----------------------------------------------------------------------------------------
+Reduce number of features from 156 to 156.
+best_params: {'depth': 1, 'neurons_layer_0': 85}
+              precision    recall  f1-score   support
+
+          AD       0.62      0.60      0.61        58
+          CN       0.61      0.60      0.61        58
+
+   micro avg       0.62      0.60      0.61       116
+   macro avg       0.62      0.60      0.61       116
+weighted avg       0.62      0.60      0.61       116
+ samples avg       0.60      0.60      0.60       116
+
+ROC-AUC: 0.6164
+-----------------------------------------------------------------------------------------
+Reduce number of features from 108 to 108.
+best_params: {'depth': 2, 'neurons_layer_0': 135, 'neurons_layer_1': 180}
+              precision    recall  f1-score   support
+
+          No       0.90      0.86      0.88      4944
+         Yes       0.90      0.84      0.87      4944
+
+   micro avg       0.90      0.85      0.88      9888
+   macro avg       0.90      0.85      0.88      9888
+weighted avg       0.90      0.85      0.88      9888
+ samples avg       0.85      0.85      0.85      9888
+
+ROC-AUC: 0.8798
+-----------------------------------------------------------------------------------------
+Reduce number of features from 85 to 85.
+best_params: {'depth': 1, 'neurons_layer_0': 115}
+              precision    recall  f1-score   support
+
+          No       0.95      0.93      0.94       753
+         Yes       0.97      0.93      0.95       752
+
+   micro avg       0.96      0.93      0.94      1505
+   macro avg       0.96      0.93      0.94      1505
+weighted avg       0.96      0.93      0.94      1505
+ samples avg       0.93      0.93      0.93      1505
+
+ROC-AUC: 0.9448
+

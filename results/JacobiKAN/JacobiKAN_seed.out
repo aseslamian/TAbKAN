@@ -1,0 +1,38 @@
+Device: cuda
+DATA: AD
+best_params: {'depth': 4, 'neurons_layer_0': 15, 'neurons_layer_1': 5, 'neurons_layer_2': 20, 'neurons_layer_3': 5, 'orders_layer_0': 2, 'orders_layer_1': 3, 'orders_layer_2': 3, 'orders_layer_3': 3}
+Average of top 10 ROC-AUC scores: 0.8888
+
+
+DATA: BL
+best_params: {'depth': 7, 'neurons_layer_0': 80, 'neurons_layer_1': 90, 'neurons_layer_2': 100, 'neurons_layer_3': 40, 'neurons_layer_4': 95, 'neurons_layer_5': 10, 'neurons_layer_6': 100, 'orders_layer_0': 2, 'orders_layer_1': 5, 'orders_layer_2': 2, 'orders_layer_3': 5, 'orders_layer_4': 4, 'orders_layer_5': 3, 'orders_layer_6': 6}
+Average of top 10 ROC-AUC scores: 0.8143
+
+DATA: CA
+best_params: {'depth': 1, 'neurons_layer_0': 45, 'orders_layer_0': 2}
+Average of top 10 ROC-AUC scores: 0.8601
+
+
+DATA: CB
+best_params: {'depth': 8, 'neurons_layer_0': 95, 'neurons_layer_1': 80, 'neurons_layer_2': 15, 'neurons_layer_3': 75, 'neurons_layer_4': 75, 'neurons_layer_5': 35, 'neurons_layer_6': 70, 'neurons_layer_7': 75, 'orders_layer_0': 4, 'orders_layer_1': 2, 'orders_layer_2': 2, 'orders_layer_3': 6, 'orders_layer_4': 4, 'orders_layer_5': 3, 'orders_layer_6': 5, 'orders_layer_7': 3}
+Average of top 10 ROC-AUC scores: 0.6113
+
+
+DATA: CG
+best_params: {'depth': 1, 'neurons_layer_0': 85, 'orders_layer_0': 2}
+Average of top 10 ROC-AUC scores: 0.8546
+
+
+DATA: DS
+best_params: {'depth': 7, 'neurons_layer_0': 50, 'neurons_layer_1': 45, 'neurons_layer_2': 70, 'neurons_layer_3': 75, 'neurons_layer_4': 50, 'neurons_layer_5': 15, 'neurons_layer_6': 70, 'orders_layer_0': 2, 'orders_layer_1': 2, 'orders_layer_2': 6, 'orders_layer_3': 2, 'orders_layer_4': 5, 'orders_layer_5': 3, 'orders_layer_6': 2}
+Average of top 10 ROC-AUC scores: 0.6849
+
+
+DATA: IC
+best_params: {'depth': 1, 'neurons_layer_0': 10, 'orders_layer_0': 4}
+Average of top 10 ROC-AUC scores: 0.8858
+
+
+DATA: IO
+best_params: {'depth': 1, 'neurons_layer_0': 85, 'orders_layer_0': 2}
+Average of top 10 ROC-AUC scores: 0.9574
