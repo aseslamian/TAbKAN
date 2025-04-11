@@ -1,6 +1,6 @@
 # TAbKAN
 
-# TabMixer: Advancing Tabular Data Analysis with an Enhanced MLP-Mixer Approach
+# TabKAN: Advancing Tabular Data Analysis using Kolmograv-Arnold Network
 
 Welcome to the repository for **"TabKAN: Advancing Tabular Data Analysis using Kolmograv-Arnold Network"**.  
 It provides multiple KAN-based architectures like ChebyshevKAN, FourierKAN, PadeRKAN, and FastKAN — including Mixer-style variants.
