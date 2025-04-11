@@ -37,7 +37,7 @@ pip install tabkan
 ```
 
 ```python
-from tabkan import ChebyshevKANMixer
+from tabkan import ChebyshevKANMixer, FourierKAN, ChebyshevKAN, JacobiKAN, FractionalKAN, PadeKAN, FastKAN, ChebyshevKANMixer, FourierKANMixer
 
 model = ChebyshevKANMixer(
     num_features=30, 
