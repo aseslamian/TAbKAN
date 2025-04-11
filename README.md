@@ -46,7 +46,26 @@ model = ChebyshevKANMixer(
     token_order=3,
     channel_order=3
 )
-output = model(X)  # X: (batch_size, num_features)
+
+## For Fine tune a New dataset
+best_params = model.tune(
+    dataset=dataset,
+    input_shape=input_shape,
+    output_shape=output_shape,
+    device=device,
+    trials=TRIALS,
+    EPOCHS=EPOCHS,
+    MAX_DEPTH=MAX_DEPTH,
+    MAX_NEURONS=MAX_NEURONS
+)
+
+depth = best_params[...]
+width = ...
+orders = ...
+
+# Each model has specific architecture
+model = ChebyshevKAN(layers=[input_shape] + width + [output_shape], orders=orders).to(device)
+history = model.fit(dataset, steps=EPOCHS, loss_fn=torch.nn.CrossEntropyLoss())
 
 ```
 
