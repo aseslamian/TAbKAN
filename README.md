@@ -1,5 +1,3 @@
-# TAbKAN
-
 # TabKAN: Advancing Tabular Data Analysis using Kolmograv-Arnold Network
 
 Welcome to the repository for **"TabKAN: Advancing Tabular Data Analysis using Kolmograv-Arnold Network"**.  
