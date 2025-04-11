@@ -28,7 +28,7 @@ You can find example datasets and usage scenarios in the **`Example`** folder. T
 
 ---
 ## Usage
-If you intend to use TabMixer block as seperate module:
+If you intend to use tabkan as a pipline:
 
 ```bash
 pip install tabkan
