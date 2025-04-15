@@ -1,6 +1,6 @@
 # TabKAN: Advancing Tabular Data Analysis using Kolmograv-Arnold Network
 
-Welcome to the repository for **"TabKAN: Advancing Tabular Data Analysis using Kolmograv-Arnold Network"**.  
+Welcome to the repository for **"TabKAN: Advancing Tabular Data Analysis using Kolmogorov-Arnold Network"**.  
 It provides multiple KAN-based architectures like ChebyshevKAN, FourierKAN, PadeRKAN, and FastKAN — including Mixer-style variants.
 
 ## Requirements
