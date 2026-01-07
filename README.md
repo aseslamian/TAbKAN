@@ -70,3 +70,19 @@ history = model.fit(dataset, steps=EPOCHS, loss_fn=torch.nn.CrossEntropyLoss())
 ```
 
 ---
+## Citation
+
+If you use this code or reference our study in your work, please cite:
+
+```bibtex
+@article{eslamian2025tabkan,
+  title={Tabkan: advancing tabular data analysis using Kolmogorov-Arnold network},
+  author={Eslamian, Ali and Afzal Aghaei, Alireza and Cheng, Qiang},
+  journal={Machine Learning for Computational Science and Engineering},
+  volume={1},
+  number={2},
+  pages={40},
+  year={2025},
+  publisher={Springer}
+}
+```
