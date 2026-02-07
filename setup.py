@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="tabkan",
-    version="1.0.1",
+    version="1.0.2",
     author="Ali Eslamian, Alireza Afzal Aghaei, Qiang Cheng",
     author_email="ali.eslamian@uky.edu",
     description="TabKAN: A Framework for Advancing Tabular Data Analysis using Kolmogorov-Arnold Networks",
